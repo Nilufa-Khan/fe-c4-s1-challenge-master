@@ -1,0 +1,35 @@
+<!-- <h2>Add Note</h2>
+<div style="margin-left: 550px;">
+    <form >
+        <input type="text" placeholder="Enter id.." #id> <br>
+    <input type="text" placeholder="Enter Title.." name="title" #title> <br>
+    <input type="text" placeholder="Enter Content.." name="unit" #content> <br>
+    <button (click)="saveNote(id.value, title.value, content.value)">Save</button>
+    </form>
+    </div> -->
+
+
+    <!-- <div class="example-button-container">
+        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div> -->
+
+      <div id="add-note">
+        <mat-form-field class="input-field" appearance="legacy">
+            <input matInput [(ngModel)]="cardadd.id" type="text" placeholder="id" #id> 
+        </mat-form-field>
+        <mat-form-field class="input-field" appearance="legacy">
+            <input matInput [(ngModel)]="cardadd.title" type="text" placeholder="title" #title>
+        </mat-form-field>
+        <mat-form-field class="input-field" appearance="legacy">
+            <input matInput [(ngModel)]="cardadd.content" type="text" placeholder="content" #content>
+        </mat-form-field>
+        <button color="primary" mat-fab type="button" (click)="saveNote(id.value, title.value, content.value)">
+            <mat-icon >add</mat-icon>
+            
+        </button>
+        <hr>
+        <app-note></app-note>
+    </div>
+    

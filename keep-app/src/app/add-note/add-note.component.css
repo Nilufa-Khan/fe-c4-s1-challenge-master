@@ -1,0 +1,11 @@
+button{
+    margin-left: 90%;
+    border-radius: 20px;
+   border: 1px solid blue;
+   color:  white;
+   background-color: blue;
+}
+  
+   #add-note{
+    margin-left: 40%;
+   }
